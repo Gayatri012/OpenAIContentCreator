@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Content Creation Helper</title>
+</head>
+<body>
+    <h1>Welcome to Content Creation Helper</h1>
+    <label for="content_type">What do you wish to do? </label>
+
+    <form action="/create_content" method="POST">
+        <select name="content_type" id="content_type">
+          <option value="tweet">Create a tweet</option>
+          <option value="hashtag">Create hashtags for a tweet</option>
+        </select>
+        <br><br>
+
+        <label for="user_text">Enter your text: </label>
+        <input type="text" id="user_text" name="user_text">
+
+        <br><br>
+
+        <input type="submit" value="Submit">
+
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Content Creation Helper</title>
+</head>
+<body>
+    <h1>Welcome to Content Creation Helper</h1>
+    <p>
+        Content type : {% content_type %}
+    </p>
+    <p>
+        User text : {% user_text %}
+    </p>
+    <p>
+        {% for choice in posts['choices'] %}
+            <h2>{{ choice['text'] }}</h2>
+        {% endfor %}
+    </p>
+
+</body>
+</html>
